@@ -1,0 +1,41 @@
+Reference: https://www.youtube.com/watch?v=hRgtWhixf3Y
+
+# Change password of the system
+	$ passwd
+
+# Open WSL on windows
+	There are two ways to open WSL
+
+	WSL CredentialsL 
+	username: avinash | password: system 
+
+	With app: 
+	- go to start menu > search for ubuntu > click on app (there are no local folder are mounted)
+
+	With powershell: 
+	- Go to powershell > enter following command 
+	$ wsl -d ubuntu -u avinash  (-d distribution -u username)
+	(there are local folder are mounted, one could modify local folder like linux)
+
+# get all the linux distributions available on wsl 
+	$ wsl -l -o
+
+# Location of Ubuntu distribution
+	C:\Users\Avinash.Dhakne\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc
+
+# Import and export the linux distribution
+	$ wsl --export "<path-to-export>/file_name.tar"
+	$ wsl --import <name-of-linux-instance> "<path-to-import>" "<path-of-exported-tar-file>"
+
+# uninstall linux instance 
+	$ wsl --unregister ubuntu 
+
+# connect with ssh to your local linux instance
+	- go to wsl distribution > install ssh-server > $sudo apt install openssh-server
+	- start the ssh service on linux > sudo start service ssh start 
+	- check the status of ssh service > sudo service ssh status 
+	- get ip of linux distribution > ip a
+	- go to windows machine > open powershell > ssh username@ip
+
+
+Note: In Linux, apt stands for "Advanced Package Tool." It is a package management utility used on Debian-based distributions, such as Ubuntu, to handle the installation, updating, and removal of software packages.
