@@ -1,0 +1,17 @@
+Root Directory
+- cd /
+
+Note: In windows we use backslash '\', In linux we use '/'
+
+Case sensitivity & extension
+
+Types of file system: 
+    - ext3, ext4
+    - XFS
+    - BtrFS (B-tree FS)
+    - FAT
+
+Check file system
+    - lsblk -f
+    - df -Th
+    - cat /etc/fstab

@@ -1,0 +1,17 @@
+Tools: 
+1. Htop     - Monitor system memory uses
+2. ranger   - File explorer
+4. ncdu     - disk usages analysis
+
+Stats: 
+- sudo docker stats
+- free -h
+- du -sh 
+- Htop
+- top
+
+Fun
+- cmatrix  - rain of matrix 
+- hollywood - 
+- cowsays
+- sl

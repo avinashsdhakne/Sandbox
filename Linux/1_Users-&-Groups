@@ -1,0 +1,35 @@
+# add user
+    - $useradd <username>
+    - useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name> (-m for if we need to create home directory)
+
+# get info about user
+    - id <username>
+
+# delete user 
+    - userdel <user_name>
+    - userdel -r <user_name> (will remove user home directory)
+    - userdel -f <user_name> (force delete user even if it is logged in)
+
+# Modify user 
+    - usermod -G <group_name> <user_name> (add user in new group but retain default group, user can contain multiple groups)
+    - usermod -g <group_name> <user_name> (add user in new group and change default group also)
+    - passwd <username> set password for user
+
+    # modification options/falgs
+        -m -d /home/<folder_path> move content of home folder to another folder
+        -p (user password)
+        -s (shell type)
+        -L (lock user) 
+        -U (unlock user)
+        
+    # login as user
+        - su <username> (su stands for switch user)
+        - whoami 
+
+# Add/Create group
+    - groupadd <group_name>
+    - groupdel <group_name> (delete group)
+    - vi /etc/group  (check how many user are added)
+    - vi /etc/paswd  (get groupID, homeDIR, shell type and description)
+    - vi /etc/shadow (get last password changed and max days to expire password)
+

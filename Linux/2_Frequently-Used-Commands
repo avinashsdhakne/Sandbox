@@ -1,0 +1,26 @@
+1. File and directory management 
+    - cd, cp, less, more, vi, nano, cat, mkdir, rm, touch, mv, pwd, ls, find, grep, tar, gzip, gunzip
+
+2. Network command
+    - curl, wget, ip/config, netstat, ssh, ftp, ping, telnet 
+    
+3. process management 
+    - ps, kill
+
+4. User management 
+    - id, whoami, passwd, su, sudo, dzdo
+
+5. Application management
+    - which, yum/apt, systemctl
+
+6. Environment Variables 
+    - env, printenv, export, source 
+
+7. Console and output 
+    - cat, clear, echo 
+ 
+8. System control
+    - poweroff, reboot
+
+9. Other commands
+    - df, du, free, chmod, awk, cur, sed, in, nohup, contab

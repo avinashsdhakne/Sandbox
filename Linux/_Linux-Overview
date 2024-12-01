@@ -1,0 +1,113 @@
+# Print working directory   -> $pwd
+
+# print system username     -> $whoami
+
+# get data of the system    -> $date 
+    use customized formatting -> 
+    -> date +%T -> display only time
+    -> date +%D -> display only date 
+    -> date +%H:%M:%S -> display in particular format
+
+# search for a particular regular expression in file 
+    $less <file_name>   - enter '/<regular_expression>' and 
+                        - press N for new instance of matching output
+                        
+    - Go to last line: shift + G
+    - Go to first line: shift + P
+
+    - search from backward direction
+        - use '?<regular_expression>'
+        - press N for next instance of matching output
+
+# head and tail (show first and last n lines from file)
+    $head -<no_of_lines> <file_name>
+    $tail -<no_of_lines> <file_name>
+
+# sort file content
+    $sort <file_name>
+    $sort -r <file_name>
+
+# display uniq content from file
+    $sort <file_name> | uniq
+
+# split file into multiple files
+    $split -l <no_lines> <file_name>
+
+# search word and display content
+    $grep <regular_expression> <file_name>
+
+# search multiple words and display matching from file
+    $egrep "match1|match2" <file_name>
+
+# wildcards in ('*','[]','{}')
+    $ls a*                  -> file starting with 'a' 
+    $touch file{1..10}.txt  -> create 10 files in single line
+
+# shuffle file content
+    $shuf <file_name>
+
+# count no. of lines in file 
+    $wc -l file
+
+# cmp two files 
+    $cmp <file_1> <file_2>
+
+# get difference between two files
+    $diff <file_1> <file_2>
+
+# find file with name
+    $find <path> -name <file_name>
+
+    # another approach 
+    $updatedb           -> update file entries in db
+    $locate <file_name> -> locate file from db entry
+
+# utility commands
+    $history            -> get previously used command history
+    $<command> help     -> get syntax and options available for command
+    $man <command>      -> get manual of command
+    $which <command>    -> get command targeted file 
+    $bc                 -> binary calculator 
+    $cal <year>         -> check calendar
+    $uptime             -> check server time information
+    $script             -> record activity on terminal press ctr + d to stop recording
+    $alias l="ls -ltr"  -> rename commands
+    
+# zip, unzip, compress, decompress
+    # zip single files
+    $gzip -k <file_name>                        -> zip time file -k stands for keep original file intact
+    $gzip -d <file_name> or $gunzip <file_name> -> unzip the file
+
+    # note: we cant use gzip for folder 
+    $tar -czf <zip_file_name> <folder_name>     -> tape archives -compress zip file 
+    $tar -xzf <zip_file_name>                   -> -decompress zip file 
+
+    # Multiple files in single zip file
+    $zip <zip_file_name> <file1> <file2>        -> zip multiple files in single zip files
+    $unzip <zip_file_name>                      -> unzip multiple files
+    $unzip -l <zip_file_name>                   -> list files in zip file
+
+# download files form internet
+    $wget <file_url>
+    $wget -o <file_name to store> <file_url>    -> download file content in another file
+    $curl <API_link>                            -> call API on linux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Doubts: 
+    more vs less 
